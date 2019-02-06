@@ -1,0 +1,17 @@
+import random
+
+num = random.randrange(1, 110)
+while True:
+    answer = input('Add Number: ')
+    if not answer.isdigit():
+        #Функция isdigit() проверяет, состоит ли строка только из цыфр
+        print('Need add number')
+        continue
+    answer = int(answer)
+    if answer > num:
+        print('Less')
+    elif answer < num:
+        print('More')
+    else:
+        print('Ready go')
+        break
